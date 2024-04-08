@@ -1,0 +1,23 @@
+
+.title {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 3rem;
+  background-color: blue;
+  
+}
+
+.subtitle {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 3rem;
+  background-color: rgb(40, 40, 43);
+  
+}
+
+.imagen {
+  display: flex;  
+  font-size: 5rem;
+  background-color: black
+  
+}
