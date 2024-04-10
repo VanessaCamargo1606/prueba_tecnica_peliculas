@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import imagen from '../assets/placeholder.png';
 import { Outlet } from 'react-router-dom';
-import { MovieDetails } from "./MovieDetails";
+//import { MovieDetails } from "./MovieDetails";
 import { Search } from "./Search";
 
 const Layout = () =>{

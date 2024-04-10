@@ -8,8 +8,8 @@ import { Routes, Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 
 //import { Switch } from 'react-router-dom';
-import   Layout  from "./components/Layout";
-import  MovieDetails  from "./components/MovieDetails";
+import Layout from "./components/Layout";
+import MovieDetails from "./components/MovieDetails";
 import { MovieCard } from "./components/MovieCard";
 
 function App() {
@@ -19,25 +19,20 @@ function App() {
         <h1 className='title'>DEMO Streaming</h1>
 
         <h1 className='subtitle'>Popular Titles</h1>
-        
+
 
       </header>
-     
+
       <Routes>
-        <Route path="/" element={<Layout />}>         
+        <Route path="/" element={<Layout />}>
           <Route path="/PeliculasGrid" element={<PeliculasGrid />} >
 
-          
           </Route>
           <Route path="/Series" element={<Series />} />
-          <Route path="/movies/" element={<h1>Hola</h1>} />
+          <Route path="/movies/:id" element={<MovieDetails />} />
 
-          
-          
         </Route>
-         
 
-        
 
       </Routes>
 

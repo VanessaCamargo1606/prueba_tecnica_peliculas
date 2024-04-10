@@ -1,8 +1,7 @@
 import api from "./api.json";
-
 import { MovieCard } from "./MovieCard";
-
 import "./PeliculasGrid.css";
+
 import { useEffect, useState } from "react";
 import { get } from "./httpClient";
 import { useLocation } from "react-router";
