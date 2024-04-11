@@ -1,0 +1,42 @@
+.detalle {
+    color: gray;
+}
+
+.container {
+    margin-top: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    gap: 10px;  
+    justify-content: center;
+    
+}
+
+.contenedorPass {
+    display: flex;
+    gap: 15px;
+    justify-content: center;   
+    
+}
+
+.boton {
+     
+     margin-left: 50%;
+} 
+
+.ingresar {
+    margin-left: -40px;
+}
+
+.registrar {
+    margin-top: -24px;
+    margin-left: 40px;
+}
+
+.btn {
+    margin-top: 5px;
+    margin-left: 50%;
+}

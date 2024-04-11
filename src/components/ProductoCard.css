@@ -1,21 +1,21 @@
-.movieCard {
+.productoCard {
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
   }
   
-  .movieCard:hover {
+  .productoCard:hover {
     opacity: 0.8;
   }
   
-  .movieImage {
+  .productoImage {
     border-radius: 10px;
     background-color: azure;
   }
   
   @media (max-width: 560px) {
-    .movieImage {
+    .productoImage {
       width: 90%;
       height: auto;
     }

@@ -1,41 +1,59 @@
 import { useState } from "react";
 import "./App.css";
-import { PeliculasGrid } from "./components/PeliculasGrid";
-import { Series } from "./components/Series";
+import { ProductosGrid } from "./components/ProductosGrid";
+import  Login  from "./components/Login"
+import  Registro  from "./components/Registro"
 import { BrowserRouter as Router, Route } from "react-router-dom";
-//import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import { Routes, Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+import Home from "./components/Home";
 
-//import { Switch } from 'react-router-dom';
-import Layout from "./components/Layout";
-import MovieDetails from "./components/MovieDetails";
-import { MovieCard } from "./components/MovieCard";
+//importar los modulos de firebase
+
+// import appFirebase from "./components/credenciales";
+// import { getAuth, onAuthStateChanged } from 'firebase/auth'
+// const auth = getAuth(appFirebase)
+
 
 function App() {
+
+  const [usuario, setUsuario] = useState(null)
+
+  // onAuthStateChanged(auth, (usuarioFirebase) => {
+  //   if (usuarioFirebase) {
+  //     setUsuario(usuarioFirebase)
+  //   }
+  //   else {
+  //     setUsuario(null)
+  //   }
+
+  // })
+
   return (
     <div>
       <header>
-        <h1 className='title'>DEMO Streaming</h1>
-
-        <h1 className='subtitle'>Popular Titles</h1>
-
-
+        <h1 className='title'>LOGIN</h1>
       </header>
 
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/PeliculasGrid" element={<PeliculasGrid />} >
+      {usuario ? <Home correoUSuario={usuario.email} /> : <Login />}
+    
 
+
+       <Routes>
+        <Route path="/" element={<Home />}>
+          <Route path="/ProductosGrid" element={<ProductosGrid />} >
           </Route>
-          <Route path="/Series" element={<Series />} />
-          <Route path="/movies/:id" element={<MovieDetails />} />
-
+          <Route path="/Registro" element={<Registro />} >
+          </Route>
         </Route>
-
-
       </Routes>
 
+
+
+
+      {/* <Route path="/Series" element={<Series />} /> */}
+      {/* <Route path="/movies/:id" element={<MovieDetails />} /> */}
       {/* <main>
         <nav>
           <ul>

@@ -1,9 +1,10 @@
 
 .title {
-  text-align: left;
+  text-align: center;
   padding-left: 50px;
-  font-size: 3rem;
+  font-size: 2rem;
   background-color: blue;
+  
   
 }
 
@@ -17,8 +18,9 @@
 
 .imagen {
   display: flex;  
-  font-size: 5rem;
-  background-color: black
+  font-size: 2rem;
+  background-color: black;
+  padding-left: 50px;
   
 }
 
